@@ -21,13 +21,9 @@
         height: 500px;
         padding: 10px;
       }
-      #how-it-works {
-        background-color: #ffc090;
-        padding: 10px;
-      }
 
       .main-header {
-        background-color: #ffc090;
+        background-color: #ba94d1;
         padding: 8px 16px;
       }
 
@@ -89,7 +85,33 @@
 
       .main-nav__item--login::before {
         content: none;
-        color: #fff;
+      }
+
+      #how-it-works {
+        padding: 10px;
+        text-align: center;
+      }
+
+      #how-it-works h2 {
+        color: #52575d;
+        font-size: 30px;
+        font-weight: 600;
+      }
+
+      .row {
+        margin-bottom: 40px;
+      }
+
+      .col {
+        display: inline-block;
+        width: 30%;
+        padding: 16px;
+        margin: 8px;
+      }
+
+      .icon-box h3 {
+        color: #52575d;
+        font-size: 26px;
       }
     </style>
   </head>
@@ -115,7 +137,37 @@
         <h1>Welcome to MovieApp</h1>
       </section>
       <section id="how-it-works">
-        <h2>How it works?</h2>
+        <div class="row">
+          <h2>How it works?</h2>
+          <p>
+            We will show you step by step how to start using MovieApp. You can
+            register, and choose the appropriate package, and start enjoying
+            countless movies and series.
+          </p>
+        </div>
+        <div class="row">
+          <div class="icon-box col">
+            <h3>Register</h3>
+            <p>
+              You should begin with signing up to start using MovieApp.
+              Otherwise, you will restrictedly use the app.
+            </p>
+          </div>
+          <div class="icon-box col">
+            <h3>Choose a Plan</h3>
+            <p>
+              You can choose one of three plans to benefit different properties
+              of MovieApp.
+            </p>
+          </div>
+          <div class="icon-box col">
+            <h3>Enjoy MovieApp</h3>
+            <p>
+              Finally, you are ready to start using MovieApp and enjoying your
+              favorite movies and series.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   </body>
