@@ -21,9 +21,17 @@
         box-sizing: border-box;
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         margin: 0;
         font-family: "Lato", sans-serif;
+      }
+
+      main {
+        margin-top: 53px;
       }
 
       #showcase {
@@ -49,6 +57,10 @@
       .main-header {
         background-color: #ba94d1;
         padding: 8px 16px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
       }
 
       .main-header__logo {
@@ -223,9 +235,25 @@
         margin: 0 auto;
         width: 1100px;
       }
+
+      #backtotop {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+      }
+
+      #backtotop i {
+        color: #ba94d1;
+        font-size: 45px;
+        transition: color 0.5s;
+      }
+
+      #backtotop i:hover {
+        color: #975eba;
+      }
     </style>
   </head>
-  <body>
+  <body id="body">
     <header class="main-header">
       <a href="#" class="main-header__logo">MovieApp</a>
       <nav class="main-nav">
@@ -348,5 +376,9 @@
         </div>
       </section>
     </main>
+
+    <a href="#body" id="backtotop">
+      <i class="fas fa-chevron-circle-up"></i>
+    </a>
   </body>
 </html>
