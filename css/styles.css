@@ -114,18 +114,25 @@ main {
   margin-bottom: 40px;
 }
 
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col-4 {
+  float: left;
+  width: 25%;
+}
+
 .col-3 {
-  display: inline-block;
-  width: 30%;
-  padding: 16px;
-  margin: 8px;
+  float: left;
+  width: 33.3%;
 }
 
 .col-2 {
-  display: inline-block;
+  float: left;
   width: 50%;
-  height: 350px;
-  background-color: saddlebrown;
 }
 
 .icon-box h3 {
@@ -156,11 +163,9 @@ main {
   float: right;
 }
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-  margin-bottom: 40px;
+.features__left,
+.features__right {
+  height: 350px;
 }
 
 .features__right h3 {
@@ -182,8 +187,6 @@ main {
 .plan {
   text-align: center;
   padding: 5px;
-  width: 33.3%;
-  float: left;
 }
 
 .plan--featured {
@@ -206,7 +209,7 @@ main {
 .inner-plan {
   background-color: #f2f2f2;
   padding: 25px 10px;
-  height: 320px;
+  height: 340px;
   border-radius: 8px;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
   transition: box-shadow 0.5s;
@@ -228,7 +231,7 @@ main {
 
 .container {
   margin: 0 auto;
-  width: 1100px;
+  width: 1117px;
 }
 
 #backtotop {
@@ -238,11 +241,28 @@ main {
 }
 
 #backtotop i {
-  color: #ba94d1;
+  color: #153462;
   font-size: 45px;
   transition: color 0.5s;
 }
 
 #backtotop i:hover {
-  color: #975eba;
+  color: #0d213f;
+}
+
+.counter {
+  background: linear-gradient(to bottom, #c5a6d9 0%, #ae82c9 100%);
+  text-align: center;
+  padding: 50px;
+}
+
+.counter__item {
+  font-size: 26px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.counter h4 {
+  margin: 0;
+  color: #fff;
 }
