@@ -111,7 +111,7 @@ main {
 }
 
 .row {
-  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .row::after {
@@ -247,7 +247,7 @@ main {
 }
 
 #backtotop i:hover {
-  color: #0d213f;
+  color: #08172b;
 }
 
 .counter {
@@ -293,4 +293,54 @@ main {
 
 .img-fluid {
   width: 100%;
+}
+
+footer {
+  background-color: #0d213f;
+  padding: 30px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+#social-links {
+  text-align: right;
+}
+
+.fa-brands {
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 50%;
+}
+
+.fa-brands:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background-color: #1877f2;
+  color: #fff;
+}
+
+.fa-twitter {
+  background-color: #1d9bf0;
+}
+
+.fa-instagram {
+  background-color: #7f0bfd;
+  color: #fff;
 }
