@@ -304,6 +304,10 @@ main {
 footer {
   background-color: #0d213f;
   padding: 30px;
+  margin-top: 30px;
+
+  position: relative;
+  bottom: -200px;
 }
 
 footer a {
