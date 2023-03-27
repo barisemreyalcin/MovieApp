@@ -51,6 +51,7 @@ main {
 @media (min-width: 768px) {
   #showcase {
     height: 60vh;
+  background-attachment: fixed;
   }
 }
 
