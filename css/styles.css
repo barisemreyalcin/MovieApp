@@ -26,7 +26,6 @@ main {
   height: 40vh;
   background-size: cover;
   position: relative;
-  /* background-attachment: fixed; */
 }
 
 #showcase .content {
